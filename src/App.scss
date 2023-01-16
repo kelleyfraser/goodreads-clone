@@ -1,0 +1,876 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+
+// Custom color variables
+$background-color: #f8f7f3;
+$heading-color: #f4f1ea;
+$banner-color: #4e5687;
+$post-box-color: #ffffff;
+$feedback-box-color: rgba(216, 216, 216, 0.3);
+$primary-button-color: #409c69;
+$secondary-button-color: #382110;
+$primary-icon-color: #b9ac9a;
+$secondary-icon-color: #a3a19f;
+$primary-txt-color: #333333;
+$secondary-txt-color: #767676;
+$primary-links-txt-color: #00635d;
+$secondary-links-txt-color: #333333;
+
+// Other variables
+$border: 1px solid #d8d8d8;
+$border-radius: 2px;
+
+// Typography
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h3 {
+  margin: 3px 0;
+}
+
+p {
+  font-size: 14px;
+  margin: 4px 0;
+  line-height: 19.6px;
+}
+
+span {
+  font-size: 14px;
+}
+
+.book-title {
+  font-family: 'Merriweather';
+  font-weight: bold;
+}
+
+.author {
+  font-family: 'Merriweather';
+  font-weight: 400;
+}
+
+.book-title-small {
+  font-size: 14px;
+}
+
+.author-small {
+  font-size: 12px;
+}
+
+.light-text {
+  margin: 0;
+  font-size: 12px;
+  color: $secondary-txt-color;
+}
+
+.underlined-text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.article-title {
+  font-family: 'Merriweather';
+  font-size: 14px;
+  color: $primary-links-txt-color;
+}
+
+// Buttons
+.btn {
+  border-radius: 3px;
+  border: 0;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.outline-btn {
+  background-color: $background-color;
+  border: 1px solid $secondary-button-color;
+  color: $secondary-button-color;
+  font-size: 11px;
+  padding: 4px 12px;
+}
+
+.outline-btn:hover {
+  background-color: $secondary-button-color;
+  color: $background-color;
+}
+
+.primary-btn {
+  background-color: $primary-button-color;
+  color: white;
+  font-size: 14px;
+  margin-top: 8px;
+  padding: 6px 30px 6px 8px;
+  text-align: left;
+}
+
+.primary-btn:hover {
+  background-color: #368158;
+}
+
+// Links
+a {
+  text-decoration: none;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.primary-link {
+  color: $primary-links-txt-color;
+}
+
+.secondary-link {
+  color: $secondary-links-txt-color;
+}
+
+.bold-link {
+  color: $secondary-links-txt-color;
+  font-weight: bold;
+}
+
+.navbar-link {
+  font-size: 15px;
+  margin: 0;
+  padding: 12px 8px;
+  color: $secondary-button-color;
+
+  span {
+    font-size: 10px;
+  }
+}
+
+.navbar-link:hover {
+  text-decoration: none;
+  color: white;
+  background-color: $secondary-button-color;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-bottom: 8px;
+  }
+}
+
+.horizontal-links-list {
+  span {
+    color: $secondary-icon-color;
+  }
+}
+
+.icon-links-list {
+  display: flex;
+  flex-direction: row;
+}
+
+// Icons
+.circle-icon {
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-icon:hover {
+  cursor: pointer;
+}
+
+.secondary-circle-icon {
+  background-color: $secondary-icon-color;
+
+  i {
+    color: $background-color;
+  }
+}
+
+.primary-circle-icon {
+  background-color: $primary-icon-color;
+
+  i {
+    color: $heading-color;
+  }
+}
+
+.outline-circle-icon {
+  background-color: $background-color;
+  border: $border;
+
+  i {
+    color: #d8d8d8;
+  }
+}
+
+// Images 
+.small-book {
+  max-width: 95px;
+}
+
+.large-book {
+  max-width: 120px;
+  max-height: 180px;
+}
+
+// Media box
+.media-box {
+  display: flex;
+  margin-bottom: 10px;
+
+  .media-box_content {
+    margin-left: 8px;
+  }
+}
+
+// Panels
+.side-panel {
+  width: 300px;
+}
+
+.main-panel {
+  width: 540px;
+}
+
+.main-panel.section {
+  border: 0;
+}
+
+// Section
+.section {
+  border-bottom: $border;
+  margin-bottom: 12px;
+  padding-bottom: 15px;
+
+  .section-heading {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+}
+
+// Progress Bar 
+.progress-container {
+  background-color: #d5d0c4;
+  height: 12px;
+  min-width: 70px;
+
+  .progress {
+    height: 12px;
+    background-color: #928064;
+  }
+}
+
+// Stars Bar
+.stars-background {
+  background-color: #d5d0c4;
+  width: 60px;
+  height: 12px;
+
+  .stars {
+    background-color: #fb6b55;
+
+    .stars-overlay {
+      background-image: url("./images/stars.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 12px;
+    }
+  }
+}
+
+// Search Bar 
+.search-bar {
+  padding: 4px 4px 6px 4px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  border: $border;
+
+  .search-input {
+    font-family: 'Lato';
+    outline: none;
+    border: 0;
+    width: 90%;
+  }
+
+  i {
+    color: $secondary-txt-color;
+  }
+
+  i:hover {
+    cursor: pointer;
+  }
+}
+
+// Feed Item 
+.feed-item-container {
+  border: $border;
+  margin: 18px 0 0 22px;
+  padding-top: 8px;
+
+  .feed-item-top {
+    display: flex;
+    flex-direction: row;
+
+    .profile-pic {
+      max-width: 44px;
+      max-height: 44px;
+      border-radius: 50%;
+      margin-left: -22px;
+      margin-right: 12px;
+    }
+
+    .feed-item-content {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      width: 458px;
+
+      .feed-item-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        .feed-item-heading_left {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          span {
+            margin: 0 4px;
+          }
+        }
+      }
+
+      button {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  .horizontal-links-list {
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+// FeedBack container
+.feedback-container {
+  background-color: $feedback-box-color;
+  border: $border;
+  border-top: 0;
+  display: flex;
+  flex-direction: row;
+  margin-left: 22px;
+
+  .circle-icon {
+    margin: 6px 4px 4px 4px;
+  }
+
+  input {
+    width: 456px;
+    margin: 8px 6px 14px 4px;
+    font-family: 'Lato';
+    outline: none;
+    border: $border;
+    padding: 4px 8px;
+  }
+}
+
+// ======= PAGE COMPONENT STYLES ======
+.App {
+
+  // App + Page Columns
+  .content {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 88px;
+  }
+
+  @media screen and (max-width: 1050px) {
+    .content {
+      padding-top: 130px;
+    }
+  }
+
+  .primary-column {
+    width: 540px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 20px;
+  }
+
+  .secondary-column {
+    width: 300px;
+    float: left;
+    margin: 12px 20px 0 20px;
+
+    .goodreads-choice-awards-section {
+      display: none;
+    }
+
+    .recommendations-section {
+      display: none;
+    }
+
+    .improve-recommendations-section {
+      display: none;
+    }
+
+    .news-section {
+      display: none;
+    }
+
+    .links-section {
+      display: none;
+    }
+
+    @media screen and (max-width: 1230px) {
+      .goodreads-choice-awards-section {
+        display: block;
+      }
+
+      .recommendations-section {
+        display: block;
+      }
+
+      .improve-recommendations-section {
+        display: block;
+      }
+
+      .news-section {
+        display: block;
+      }
+
+      .links-section {
+        display: block;
+      }
+    }
+  }
+
+  .tertiary-column {
+    width: 300px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 1230px) {
+    .content {
+      width: 900px;
+      margin: 0 auto;
+    }
+
+    .tertiary-column {
+      display: none;
+    }
+  }
+
+  // Banner Section
+  .banner-section {
+    position: fixed;
+    background-color: $banner-color;
+    background-image: url("./images/213.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 44px;
+  }
+
+  // Header Section
+  .header-section {
+    background-color: $heading-color;
+    position: fixed;
+    width: 100%;
+    top: 44px;
+    border-bottom: $border;
+
+    .header-content {
+      padding: 0 12px;
+      max-width: 1220px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .header-search-icon {
+        display: none;
+      }
+
+      .search-bar {
+        margin: auto 0;
+        width: 30%;
+      }
+
+      img {
+        max-width: 120px;
+        margin: auto 0;
+        padding-top: 3px;
+      }
+
+      .heading-icon-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .wide-screen-heading-icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+        }
+
+        .heading-icon-container {
+          padding: 4px 0;
+
+          .circle-icon {
+            margin: 0 6px;
+
+          }
+        }
+
+        .heading-icon-container:hover {
+          background-color: $secondary-button-color;
+        }
+      }
+    }
+  }
+
+  // NavBar Section
+  .navbar-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .under-header-navbar-section {
+    display: none;
+    background-color: $heading-color;
+    position: fixed;
+    width: 100%;
+    top: 85px;
+    border-bottom: $border;
+  }
+
+  @media screen and (max-width: 1050px) {
+    .header-section {
+      .header-content {
+        padding: 0 8px;
+
+        .search-bar {
+          margin: auto 6px;
+          width: 55%;
+        }
+      }
+
+      .navbar-section {
+        display: none;
+      }
+    }
+
+    .under-header-navbar-section {
+      display: block;
+
+      .navbar-section {
+        width: 500px;
+        margin: 0 auto;
+
+        .navbar-link {
+          padding: 12px 20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 765px) {
+    .header-section {
+      .header-content {
+        .header-search-icon {
+          display: block;
+          width: 32px;
+          margin: auto 0;
+        }
+
+        .heading-icon-list {
+          .wide-screen-heading-icons {
+            display: none;
+          }
+        }
+      }
+
+      .search-bar {
+        display: none;
+      }
+    }
+
+    .under-header-navbar-section {
+      .navbar-section {
+        .navbar-link {
+          width: 30%;
+          text-align: center;
+        }
+      }
+
+      .home-link {
+        display: none;
+      }
+    }
+  }
+
+  // Reading Challenge Section
+  .reading-challenge-section {
+    img {
+      max-width: 110px;
+    }
+
+    .reading-challenge-progress {
+      display: flex;
+      flex-direction: row;
+      min-width: 150px;
+      justify-content: space-between;
+      align-items: center;
+
+      .progress-container {
+        min-height: 12px;
+        max-width: 70px;
+      }
+    }
+  }
+
+  // Want to Read Section
+  .want-to-read-section {
+    .reading-list-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 4px;
+      margin-bottom: 8px;
+
+      .reading-list-item {
+        min-width: 96px;
+        min-height: 96px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  // Bookshelves Section
+  .bookshelves-section {
+    .bookshelves-content {
+      display: flex;
+      flex-direction: row;
+
+      .bookshelf-counts {
+        display: flex;
+        flex-direction: column;
+        padding-right: 12px;
+        text-align: right;
+      }
+
+      .bookshelf-names {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  // Goodreads Choice Awards Section
+  .goodreads-choice-awards-section {
+    .goodreads-choice-awards-section_content {
+      background-color: #343d30;
+
+      .goodreads-choice-awards_text {
+        color: white;
+        padding: 10px 50px;
+
+        button {
+          font-size: 14px;
+          border: none;
+          width: 100%;
+          padding: 8px 0;
+          background-color: #ffd867;
+          border-radius: 3px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  // Recommendations Section
+  .recommendations-section {
+    .recommendations-heading {
+      margin-bottom: 10px;
+    }
+
+    .recommendations-stars-bar {
+      display: flex;
+      flex-direction: row;
+      min-width: 150px;
+      align-items: center;
+
+      .stars-background {
+        margin-right: 6px;
+      }
+    }
+
+    .next-recommendation {
+      margin: auto 0 auto 25px;
+
+      i {
+        color: $secondary-icon-color;
+      }
+
+      i:hover {
+        cursor: pointer;
+      }
+    }
+
+    .recommendation-description {
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+  }
+
+  // Improve Recommendations Section
+  .improve-recommendations-section {
+    .progress-container {
+      margin-top: 10px;
+      margin-bottom: 4px;
+      width: 238px;
+      height: 15px;
+
+      .progress {
+        height: 15px;
+      }
+    }
+  }
+
+  // News Section
+  .news-section {
+    img {
+      max-width: 300px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+  }
+
+  // Links Section
+  .links-section {
+    border: 0;
+
+    .section-heading {
+      margin-right: 40px;
+    }
+
+    .top-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .circle-icon {
+      margin-right: 8px;
+    }
+
+    .app-download-links {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        max-width: 135px;
+        margin-top: 30px;
+        margin-right: 15px;
+      }
+    }
+
+    .mobile-link {
+      margin: 8px 0;
+    }
+  }
+
+  // Announcement Section
+  .announcement-section {
+    font-family: 'Merriweather';
+    line-height: 19.6px;
+
+    .announcement-container {
+      border: $border;
+    }
+
+    .announcement-text {
+      margin: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: normal;
+      color: $secondary-txt-color;
+    }
+  }
+
+  // Updates Feed Section
+  .updates-section {
+    .updates-section_heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+
+      .section-heading {
+        margin: 0;
+      }
+
+      .icon-with-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        i {
+          color: $secondary-txt-color;
+          margin-right: 4px;
+        }
+
+        .light-text {
+          font-size: 14px;
+        }
+
+      }
+    }
+  }
+}

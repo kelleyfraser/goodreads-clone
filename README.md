@@ -1,0 +1,2 @@
+## Overview
+This project was completed as an assignment for the HyperionDev Web Development Bootcamp. This project is a clone of the Goodreads home page created using React.js and custom style sheets. In order to view the original site inspiration you will need to be logged into [https://www.goodreads.com](https://www.goodreads.com). This project is only a styled clone. State changes and functionality has not been replicated. 
